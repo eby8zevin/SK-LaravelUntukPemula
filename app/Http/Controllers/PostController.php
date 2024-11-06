@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Foundation\Validation\ValidatesRequests;
 
 class PostController extends Controller
 {
+    use ValidatesRequests;
+
     /**
      * index
      * 
